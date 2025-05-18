@@ -1,0 +1,186 @@
+/*Importa fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Define as variáveis das cores*/
+:root {
+    --cor-1: #082922;
+    --cor-2: #572e2e;
+    --cor-3: #d3d3d3;
+}
+
+/*Remove espaçamentos indesejados*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*↓Estiliza a página↓*/
+
+/*↓Estiliza o cabeçalho↓*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--cor-1);
+    border-bottom: 1px solid var(--cor-3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*Tira da parte visível o toggle responsável por criar o menu*/
+#menu-toggle {
+    position: absolute;
+    right: 0;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--cor-1);
+}
+
+.menu-icon:hover {
+    text-decoration: underline;
+}
+
+/*↑Estiliza o cabeçalho↑*/
+
+
+/*↓Cria e estiliza o menu↓*/
+
+.menu {
+    max-width: 30%;
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: var(--cor-3);
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostra o menu */
+#menu-toggle:checked+.menu-icon+.menu {
+    display: block;
+}
+
+.menu label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-1);
+    display: block;
+    padding: 5px;
+}
+
+.menu a:hover {
+    background-color: var(--cor-3);
+}
+
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/*↑Cria e estiliza o menu↑*/
+
+
+
+/*↓Estiliza o main da página↓*/
+
+main {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.elemento-main {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+.bloco-de-texto {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.topico {
+    font-size: 27px;
+}
+
+.texto {
+    padding-top: 1rem;
+}
+
+.subtopico {
+    font-size: 23px;
+}
+
+.lista {
+    margin-left: 2rem;
+}
+
+#contato {
+    background-color: var(--cor-3);
+    border-radius: 3rem;
+}
+
+.texto-contato {
+    color: var(--cor-1);
+}
+
+#botao-msg {
+    background-color: var(--cor-1);
+    color: var(--cor-3);
+    border: 0;
+}
+/*↑Estiliza o main da página↑*/
+
+/*↓Estiliza o footer da página↓*/
+
+footer {
+    background-color: var(--cor-1);
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--cor-3);
+}
+
+
+
+.rodape {
+
+    text-align: center;
+    font-weight: 400;
+}
+
+/*↑Estiliza o footer da página↑*/
+
+
+
+
+body {
+    background-color: var(--cor-1);
+    font-family: 'Roboto';
+    color: var(--cor-3)
+}
+
+
+/*↑Estiliza a página↑*/
