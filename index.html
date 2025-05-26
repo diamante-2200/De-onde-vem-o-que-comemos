@@ -18,16 +18,17 @@
                 <a href="#origem">De onde vem o que comemos?</a>
                 <a href="#necessidade">Precisamos de tanto assim?</a>
                 <a href="#problemas-sociais">Fome e preços altos</a>
-                <a href="#contato">Contato</a>
+                <a href="#comentarios">Comentários</a>
                 <a href="#referencias">Referências</a>
             </nav>
-            <h1>De onde vem os alimentos?</h1>
         </div>
+        <h1>De onde vem os alimentos?</h1>
     </header>
+
     <main>
         <section class="elemento-main">
             <section id="origem" class="bloco-de-texto">
-                <h2 class="topico texto">De onde vem o que comemos?</h2>
+                <h2 class="topico texto text-center">De onde vem o que comemos?</h2>
                 <p class="texto">Lorem ipsum dolor sit amet.Rem totam optio ut voluptate quidem <em>Aut
                         repellendus</em>.
                     Nam voluptatem eius <strong>In ullam rem delectus porro eos sint rerum</strong> eos explicabo quos.
@@ -39,10 +40,10 @@
                     Nam voluptatem eius <strong>In ullam rem delectus porro eos sint rerum</strong> eos explicabo quos.
                     33
                     laborum totamAb tempora et amet corporis. </p>
-                </section>
+            </section>
 
             <section id="necessidade" class="bloco-de-texto">
-                <h2 class="topico texto">Precisamos de tanto assim?</h2>
+                <h2 class="topico texto text-center">Precisamos de tanto assim?</h2>
                 <p class="texto">Lorem ipsum dolor sit amet. Et doloribus nobis sit eius facere et placeat dolore. Ut
                     dignissimos provident sit corrupti maiores non cumque ipsum. Aut architecto voluptatum ut tempore
                     ipsum
@@ -61,43 +62,52 @@
             </section>
         </section>
 
-        <section id="contato" class="elemento-main">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3 topico texto-contato">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome" class="texto-contato">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email" class="texto-contato">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem" class="texto-contato">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button id="botao-msg" type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
+        <section id="comentarios" class="elemento-main">
+            <section id="postar-comentario">
+                <div class="container p-5 d-flex justify-content-center">
+                    <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                        <!-- Caixa do formulário com 60% de largura -->
+                        <h2 class="mb-3 topico texto-comentario">Poste um comentario</h2>
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="nome" class="texto-comentario">Nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                    placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group mb-3">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="comentario" class="texto-comentario">Comentário</label>
+                                <textarea id="comentario" name="comentario" class="form-control rounded-4 mt-2" rows="4"
+                                    placeholder="Escreva seu comentário"></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button id="botao-msg" type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                    comentário</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section id="comentarios-postados">
+                <h2 class="text-center">Comentários</h2>
+                <div id="postados" class="container">
+                    <p id="sem-comentario" class="texto-comentario">Nenhum comentário adicionado ainda, seja o primeiro a comentar!</p>
+                </div>
+            </section>
         </section>
 
         <section id="referencias" class="elemento-main bloco-de-texto">
-            <h2 class="topico texto">Referências</h2>
+            <h2 class="topico texto text-center">Referências</h2>
         </section>
     </main>
 
     <footer>
         <p class="rodape">lorem ipsum</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
