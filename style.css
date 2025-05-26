@@ -135,12 +135,12 @@ main {
     margin-left: 2rem;
 }
 
-#contato {
+#postar-comentario, #postados {
     background-color: var(--cor-3);
-    border-radius: 3rem;
+    border-radius: 2.5rem;
 }
 
-.texto-contato {
+.texto-comentario {
     color: var(--cor-1);
 }
 
@@ -149,6 +149,19 @@ main {
     color: var(--cor-3);
     border: 0;
 }
+
+#comentarios-postados {
+    padding-top: 2rem;
+}
+
+#postados {
+    padding: 12px;
+}
+
+.comentario {
+    display: block;
+}
+
 /*↑Estiliza o main da página↑*/
 
 /*↓Estiliza o footer da página↓*/
