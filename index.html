@@ -12,6 +12,18 @@
 <body>
     <header>
         <div>
+            <div class="acessibilidade-wrapper">
+                <input type="checkbox" id="acess-toggle" hidden />
+                <label for="acess-toggle" class="acess-icon" aria-label="Abrir menu de acessibilidade">🛠️
+                    Acessibilidade</label>
+
+                <nav class="menu acess-menu" role="navigation" aria-label="Menu de acessibilidade">
+                    <button id="aumentar-fonte" class="acess-btn">Aumentar fonte</button>
+                    <button id="diminuir-fonte" class="acess-btn">Diminuir fonte</button>
+                    <button id="alternar-contraste" class="acess-btn">Mudar contraste</button>
+                </nav>
+            </div>
+
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu de navegação">☰ Menu</label>
             <nav class="menu" role="navigation" aria-label="Menu principal">
@@ -92,7 +104,8 @@
             <section id="comentarios-postados">
                 <h2 class="text-center">Comentários</h2>
                 <div id="postados" class="container">
-                    <p id="sem-comentario" class="texto-comentario">Nenhum comentário adicionado ainda, seja o primeiro a comentar!</p>
+                    <p id="sem-comentario" class="texto-comentario">Nenhum comentário adicionado ainda, seja o primeiro
+                        a comentar!</p>
                 </div>
             </section>
         </section>
