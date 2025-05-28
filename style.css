@@ -34,12 +34,20 @@ h1 {
 }
 
 /*Tira da parte visível o toggle responsável por criar o menu*/
-#menu-toggle {
+#menu-toggle, #acess-toggle {
     position: absolute;
     right: 0;
 }
 
-.menu-icon {
+.acess-icon {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--cor-1);
+}
+.menu-icon{
     position: absolute;
     right: 0;
     display: inline-block;
@@ -48,12 +56,68 @@ h1 {
     background: var(--cor-1);
 }
 
-.menu-icon:hover {
+.menu-icon:hover, .acess-icon:hover {
     text-decoration: underline;
 }
 
 /*↑Estiliza o cabeçalho↑*/
 
+
+/*Menu acessibilidade*/
+
+/* Wrapper do menu de acessibilidade */
+.acessibilidade-wrapper {
+  position: relative;
+}
+
+/* Oculta por padrão */
+.acess-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: var(--cor-3);
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Exibe quando o checkbox estiver marcado */
+#acess-toggle:checked + .acess-icon + .acess-menu {
+  display: block;
+}
+
+/* Botões do menu */
+.acess-btn {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--cor-1);
+}
+
+.acess-btn:hover {
+  background-color: var(--cor-3);
+  text-decoration: underline;
+}
+
+
+/* Estilo de contraste alternativo */
+.contraste-alto {
+    background-color: #000;
+    color: #fff;
+}
+
+.contraste-alto .texto {
+    color: #fff;
+}
+
+.contraste-alto .texto-comentario {
+    color: #000;
+}
+/*Menu acessibilidade*/
 
 /*↓Cria e estiliza o menu↓*/
 
@@ -135,7 +199,8 @@ main {
     margin-left: 2rem;
 }
 
-#postar-comentario, #postados {
+#postar-comentario,
+#postados {
     background-color: var(--cor-3);
     border-radius: 2.5rem;
 }
@@ -160,6 +225,8 @@ main {
 
 .comentario {
     display: block;
+    border-bottom: 1px solid var(--cor-1);
+    border-top: 1px solid var(--cor-1);
 }
 
 /*↑Estiliza o main da página↑*/
