@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 /*↓Estiliza a página↓*/
 
 /*↓Estiliza o cabeçalho↓*/
@@ -150,15 +154,12 @@ h1 {
     padding: 5px;
 }
 
-.menu a:hover {
-    background-color: var(--cor-3);
-}
-
-
-a:hover {
+#referencias a:hover , .menu a:hover, .acess-btn:hover {
     color: blue;
     text-decoration: underline;
 }
+
+
 
 /*↑Cria e estiliza o menu↑*/
 
@@ -171,7 +172,7 @@ main {
     margin-bottom: 3rem;
 }
 
-.elemento-main {
+.elemento-main, img {
     max-width: 70%;
     margin-left: 15%;
     margin-right: auto;
@@ -228,6 +229,15 @@ main {
     border-bottom: 1px solid var(--cor-1);
     border-top: 1px solid var(--cor-1);
 }
+
+
+#referencias a {
+    text-decoration: none;
+    color: var(--cor-3);
+    display: block;
+    padding: 5px;
+}
+
 
 /*↑Estiliza o main da página↑*/
 
