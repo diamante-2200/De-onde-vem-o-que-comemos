@@ -93,6 +93,10 @@ main {
     padding: 5px;
 }
 
+#referencis a:hover {
+    text-decoration:underlined;
+    color:blue;
+}
 
 /*↑Estiliza o main da página↑*/
 
