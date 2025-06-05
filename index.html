@@ -11,27 +11,6 @@
 
 <body>
     <header>
-        <div>
-            <div class="acessibilidade-wrapper">
-                <input type="checkbox" id="acess-toggle" hidden />
-                <label for="acess-toggle" class="acess-icon">🛠️ Acessibilidade</label>
-                <nav class="acess-menu" role="navigation" aria-label="Menu de acessibilidade">
-                    <button id="aumentar-fonte" class="acess-btn">Aumentar</button>
-                    <button id="diminuir-fonte" class="acess-btn">Diminuir</button>
-                    <button id="alternar-contraste" class="acess-btn">Contraste</button>
-                </nav>
-            </div>
-
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu de navegação">☰ Menu</label>
-            <nav class="menu" role="navigation" aria-label="Menu principal">
-                <a href="#origem">De onde vem o que comemos?</a>
-                <a href="#meio-ambiente">Impactos ambientais</a>
-                <a href="#problemas-sociais">Fome e preços altos</a>
-                <a href="#comentarios">Comentários</a>
-                <a href="#referencias">Referências</a>
-            </nav>
-        </div>
         <h1>De onde vem os alimentos?</h1>
     </header>
 
@@ -137,42 +116,7 @@
                 estão sujeitos à uma fome muita vezes letal.</p>
         </section>
 
-        <section id="comentarios" class="elemento-main">
-            <section id="postar-comentario">
-                <div class="container p-5 d-flex justify-content-center">
-                    <div class="col-md-8 col-lg-10 rounded-5 formulario">
-                        <!-- Caixa do formulário com 60% de largura -->
-                        <h2 class="mb-3 topico texto-comentario">Poste um comentario</h2>
-                        <form>
-                            <div class="form-group mb-3">
-                                <label for="nome" class="texto-comentario">Nome</label>
-                                <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                    placeholder="Digite seu nome">
-                            </div>
-                            <div class="form-group mb-3">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="comentario" class="texto-comentario">Comentário</label>
-                                <textarea id="comentario" name="comentario" class="form-control rounded-4 mt-2" rows="4"
-                                    placeholder="Escreva seu comentário"></textarea>
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button id="botao-msg" type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                    comentário</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <section id="comentarios-postados">
-                <h2 class="text-center">Comentários</h2>
-                <div id="postados" class="container">
-                    <p id="sem-comentario" class="texto-comentario">Nenhum comentário adicionado ainda, seja o primeiro
-                        a comentar!</p>
-                </div>
-            </section>
-        </section>
-
+ 
         <section id="referencias" class="elemento-main bloco-de-texto">
             <h2 class="topico texto text-center">Referências</h2>
             <p class="texto">As imagens são de domínio público e foram obtidas e/ou alteradas usando a ferramenta Canva
