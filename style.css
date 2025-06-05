@@ -43,125 +43,10 @@ h1 {
     right: 0;
 }
 
-.acess-icon {
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px;
-    background: var(--cor-1);
-}
-.menu-icon{
-    position: absolute;
-    right: 0;
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px;
-    background: var(--cor-1);
-}
-
-.menu-icon:hover, .acess-icon:hover {
-    text-decoration: underline;
-}
 
 /*↑Estiliza o cabeçalho↑*/
 
 
-/*Menu acessibilidade*/
-
-/* Wrapper do menu de acessibilidade */
-.acessibilidade-wrapper {
-  position: relative;
-}
-
-/* Oculta por padrão */
-.acess-menu {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: var(--cor-3);
-  padding: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-
-/* Exibe quando o checkbox estiver marcado */
-#acess-toggle:checked + .acess-icon + .acess-menu {
-  display: block;
-}
-
-/* Botões do menu */
-.acess-btn {
-  background-color: transparent;
-  border: none;
-  text-align: left;
-  width: 100%;
-  padding: 5px;
-  cursor: pointer;
-  color: var(--cor-1);
-}
-
-.acess-btn:hover {
-  background-color: var(--cor-3);
-  text-decoration: underline;
-}
-
-
-/* Estilo de contraste alternativo */
-.contraste-alto {
-    background-color: #000;
-    color: #fff;
-}
-
-.contraste-alto .texto {
-    color: #fff;
-}
-
-.contraste-alto .texto-comentario {
-    color: #000;
-}
-/*Menu acessibilidade*/
-
-/*↓Cria e estiliza o menu↓*/
-
-.menu {
-    max-width: 30%;
-    display: none;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background: var(--cor-3);
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Mostra o menu */
-#menu-toggle:checked+.menu-icon+.menu {
-    display: block;
-}
-
-.menu label {
-    display: block;
-    margin: 5px 0;
-    cursor: pointer;
-}
-
-.menu a {
-    text-decoration: none;
-    color: var(--cor-1);
-    display: block;
-    padding: 5px;
-}
-
-#referencias a:hover , .menu a:hover, .acess-btn:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-
-
-/*↑Cria e estiliza o menu↑*/
 
 
 
@@ -198,36 +83,6 @@ main {
 
 .lista {
     margin-left: 2rem;
-}
-
-#postar-comentario,
-#postados {
-    background-color: var(--cor-3);
-    border-radius: 2.5rem;
-}
-
-.texto-comentario {
-    color: var(--cor-1);
-}
-
-#botao-msg {
-    background-color: var(--cor-1);
-    color: var(--cor-3);
-    border: 0;
-}
-
-#comentarios-postados {
-    padding-top: 2rem;
-}
-
-#postados {
-    padding: 12px;
-}
-
-.comentario {
-    display: block;
-    border-bottom: 1px solid var(--cor-1);
-    border-top: 1px solid var(--cor-1);
 }
 
 
