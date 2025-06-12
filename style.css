@@ -86,7 +86,7 @@ main {
 }
 
 
-#referencis a:hover {
+a:hover {
     text-decoration:underlined;
     color:blue;
 }
